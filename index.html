@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Venue Booking</title>
+    <link rel="stylesheet" href="stylesheets.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navigationbar">
+            <img src="logo-no-background.png" alt="Sports Venue Logo" class="logo">
+            <nav>
+                <ul class="navigationmenu">
+                    <li><a href="#offer">About</a></li>
+                    <li><a href="#sports">Sports</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="welcomebox">
+            <h1>Welcome to Elite Sports Hub</h1>
+            <p>Explore world-class facilities and book venues for your favorite sports.</p>
+        </div>
+    </header>
+
+    <!-- What We Offer Section -->
+    <section id="offer" class="offer">
+        <h2>What We Offer</h2>
+        <div class="offer-grid">
+            <div class="offercontent">
+                <img src="facilities.jpg" alt="World-Class Facilities">
+                <div class="text-box">
+                    <h3>World-Class Facilities</h3>
+                    <p>Top-notch facilities for a variety of sports, designed for both beginners and professionals.</p>
+                </div>
+            </div>
+
+            <div class="offercontent">
+                <img src="booking.jpg" alt="Convenient Booking">
+                <div class="text-box">
+                    <h3>Convenient Booking</h3>
+                    <p>Book your sports venues easily and efficiently with just a few clicks.</p>
+                </div>
+            </div>
+
+            <div class="offercontent">
+                <img src="staff.jpg" alt="Experienced Staff">
+                <div class="text-box">
+                    <h3>Experienced Staff</h3>
+                    <p>Friendly and experienced staff to ensure a smooth and enjoyable visit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="sports" class="sports">
+            <h2>Our Sports</h2>
+            <div class="sports-grid">
+                <!-- Cricket Section -->
+                <div class="sport">
+                    <img src="cricketstadium.jpg" alt="Cricket">
+                    <h3>Cricket</h3>
+                    <p>Enjoy professional cricket pitches equipped with top-quality facilities.</p>
+                    <details class="registration">
+                        <summary class="registerbutton">Register Now</summary>
+                        <form action="/submit-cricket" method="POST">
+                            <label for="cricket-players">Select Players:</label>
+                            <select id="cricket-players" name="players">
+                                <option value="1">1 Player</option>
+                                <option value="2">2 Players</option>
+                                <option value="3">3 Players</option>
+                                <option value="4">4 Players</option>
+                                <option value="5">5 Players</option>
+                                <option value="6">6 Players</option>
+                                <option value="7">7 Players</option>
+                                <option value="8">8 Players</option>
+                                <option value="9">9 Players</option>
+                            </select>
+
+                            <label for="cricket-hours">Select Hours:</label>
+                            <select id="cricket-hours" name="hours">
+                                <option value="1">1 Hour</option>
+                                <option value="2">2 Hours</option>
+                                <option value="3">3 Hours</option>
+                                <option value="4">4 Hours</option>
+                                <option value="5">5 Hours</option>
+                            </select>
+
+                            <label for="cricket-fees">Select Fees:</label>
+                            <select id="cricket-fees" name="fees">
+                                <option value="10">10 AED 1hr</option>
+                                <option value="20">20 AED 2hr</option>
+                                <option value="30">30 AED 3hr</option>
+                                <option value="40">40 AED 4hr</option>
+                                <option value="50">50 AED 5hr</option>
+                            </select>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </details>
+                    <div id="thank-you-cricket" class="thank-you-section"></div>
+                </div>
+
+                <!-- Football Section -->
+                <div class="sport">
+                    <img src="footballfield.jpg" alt="Football">
+                    <h3>Football</h3>
+                    <p>Play on FIFA-standard football fields with world-class amenities.</p>
+                    <details class="registration">
+                        <summary class="registerbutton">Register Now</summary>
+                        <form action="/submit-football" method="POST">
+                            <label for="football-players">Select Players:</label>
+                            <select id="football-players" name="players">
+                                <option value="1">1 Player</option>
+                                <option value="2">2 Players</option>
+                                <option value="3">3 Players</option>
+                                <option value="4">4 Players</option>
+                                <option value="5">5 Players</option>
+                                <option value="6">6 Players</option>
+                                <option value="7">7 Players</option>
+                                <option value="8">8 Players</option>
+                                <option value="9">9 Players</option>
+                            </select>
+
+                            <label for="football-hours">Select Hours:</label>
+                            <select id="football-hours" name="hours">
+                                <option value="1">1 Hour</option>
+                                <option value="2">2 Hours</option>
+                                <option value="3">3 Hours</option>
+                                <option value="4">4 Hours</option>
+                                <option value="5">5 Hours</option>
+                            </select>
+
+                            <label for="football-fees">Select Fees:</label>
+                            <select id="football-fees" name="fees">
+                                <option value="10">10 AED 1hr</option>
+                                <option value="20">20 AED 2hr</option>
+                                <option value="30">30 AED 3hr</option>
+                                <option value="40">40 AED 4hr</option>
+                                <option value="50">50 AED 5hr</option>
+                            </select>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </details>
+                    <div id="thank-you-football" class="thank-you-section"></div>
+                </div>
+
+                <!-- Basketball Section -->
+                <div class="sport">
+                    <img src="basketball.jpg" alt="Basketball">
+                    <h3>Basketball</h3>
+                    <p>Experience our indoor courts, perfect for fast-paced basketball games.</p>
+                    <details class="registration">
+                        <summary class="registerbutton">Register Now</summary>
+                        <form action="/submit-basketball" method="POST">
+                            <label for="basketball-players">Select Players:</label>
+                            <select id="basketball-players" name="players">
+                                <option value="1">1 Player</option>
+                                <option value="2">2 Players</option>
+                                <option value="3">3 Players</option>
+                                <option value="4">4 Players</option>
+                                <option value="5">5 Players</option>
+                                <option value="6">6 Players</option>
+                                <option value="7">7 Players</option>
+                                <option value="8">8 Players</option>
+                                <option value="9">9 Players</option>
+                            </select>
+
+                            <label for="basketball-hours">Select Hours:</label>
+                            <select id="basketball-hours" name="hours">
+                                <option value="1">1 Hour</option>
+                                <option value="2">2 Hours</option>
+                                <option value="3">3 Hours</option>
+                                <option value="4">4 Hours</option>
+                                <option value="5">5 Hours</option>
+                            </select>
+
+                            <label for="basketball-fees">Select Fees:</label>
+                            <select id="basketball-fees" name="fees">
+                                <option value="10">10 AED 1hr</option>
+                                <option value="20">20 AED 2hr</option>
+                                <option value="30">30 AED 3hr</option>
+                                <option value="40">40 AED 4hr</option>
+                                <option value="50">50 AED 5hr</option>
+                            </select>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </details>
+                    <div id="thank-you-basketball" class="thank-you-section"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Sports Venue Booking. All rights reserved.</p>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Enter your email to get the latest updates and offers:</p>
+
+            <form action="/submit-newsletter" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Thank You Message Section-->
+        <div id="thank-you-container" class="thank-you-container"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

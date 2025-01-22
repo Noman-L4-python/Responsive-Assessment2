@@ -1,0 +1,343 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Prompt", sans-serif; 
+    font-weight: 400; 
+    background-color: #000000; 
+    color: #FFFFFF; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+header {
+    background-color: #000000; 
+    color: #FFFFFF; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.navigationmenu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigationmenu li a {
+    color: #39FF14; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigationmenu li a:hover {
+    color: #FF00FF; 
+}
+
+.welcomebox h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #39FF14; 
+    font-family: "Prompt", sans-serif; 
+    font-weight: 600;
+}
+
+.welcomebox p {
+    font-size: 1.2rem;
+}
+
+
+.sports {
+    padding: 40px 20px;
+    background-color: #111111; 
+    text-align: center;
+}
+
+.sports h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #39FF14; 
+    font-family: "Prompt", sans-serif; 
+    font-weight: 600;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sport {
+    background-color: #222222; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); 
+    text-align: center;
+}
+
+.sport img {
+    border-radius: 10px;
+}
+
+.sport h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #39FF14; 
+    font-family: "Prompt", sans-serif; 
+    font-weight: 600;
+}
+
+.sport p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    color: #BDC3C7;
+}
+
+.registerbutton {
+    background-color: #39FF14;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registerbutton:hover {
+    background-color: #2ECC71; 
+}
+
+/* What We Offer Section */
+.offer {
+    padding: 40px 20px;
+    background-color: #111111; 
+    text-align: center;
+}
+
+.offer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #39FF14; 
+    font-family: "Prompt", sans-serif; 
+    font-weight: 600;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.offercontent {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offercontent:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2); 
+}
+
+.offercontent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.offercontent .text-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    color: #FFFFFF; 
+    text-align: left;
+    border-radius: 0 0 15px 15px; 
+}
+
+.offercontent .text-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #39FF14; 
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+}
+
+.offercontent .text-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #BDC3C7; 
+}
+
+/*Responsiveness */
+@media only screen and (max-width: 768px) {
+    .offercontent {
+        max-width: 90%;
+        height: 300px;
+    }
+
+    .offercontent.full-width {
+        height: 400px;
+    }
+
+    .offercontent .text-overlay {
+        width: 90%;
+    }
+
+    .offercontent h3 {
+        font-size: 1.5rem;
+    }
+
+    .offercontent p {
+        font-size: 1rem;
+    }
+
+    .sports h2 {
+        font-size: 2rem;
+    }
+}
+
+
+footer {
+    background-color: #111111; 
+    color: #FFFFFF; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111111; 
+    border-top: none; 
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #39FF14; 
+    font-family: "Prompt", sans-serif; 
+    font-weight: 600;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #BDC3C7; 
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #39FF14;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #222222; 
+    color: #FFFFFF; 
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #39FF14; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #2ECC71; 
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #FFFFFF; 
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #39FF14;
+    margin-bottom: 20px;
+    background-color: #222222; 
+    color: #FFFFFF; 
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #39FF14; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2ECC71; 
+}
+
+
+.thank-you-message {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto;
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
+    width: 80%;
+    max-width: 400px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 0;
+    z-index: 10; /* Ensures it's on top */
+}
+form {
+    margin-bottom: 30px; 
+}
